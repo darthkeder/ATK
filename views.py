@@ -5,6 +5,6 @@ from flask import render_template, url_for, request, redirect, flash, session
 def index():
     return render_template('home.html')
 
-@app.route('/pembelian')
-def pembelian():
-    return render_template('kasir_pembelian.html')
+@app.route('/penjualan')
+def penjualan():
+    return render_template('kasir_penjualan.html')
