@@ -1,8 +1,11 @@
 from flask import Flask
+from flask_mysqldb import MySQL
 
-application = Flask(__name__)
+app = Flask(__name__)
+app.config.from_pyfile('config.py')
+mysql = MySQL(app)
 
 from views import *
 
 if  __name__ == '__main__':
-    application.run(host='127.0.0.1', debug=True)
+    app.run(debug=True)

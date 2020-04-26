@@ -1,0 +1,7 @@
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'root'
+#MYSQL_PASSWORD = '12345678'
+MYSQL_DB = 'atk'
+MYSQL_CURSORCLASS = 'DictCursor'
+
+SECRET_KEY = 'Manulife123!'
